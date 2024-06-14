@@ -9,82 +9,88 @@
 </head>
 
 <body>
+    <script src="./script.js"></script>
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
     <h1 id="title" class="title">Personal Information Form</h1>
     <p class="des" id="description">DOM manipulation with Forms</p>
     <div class="container">
         <div class="form">
             <form id="form" action="#">
                 <div class="form-group">
-                    
-                        <tr>
-                            <td class="pDetails">First Name</td>
-                            <form id="first-name">
-                                <td><input id="first-name" class="inp" type="text" placeholder="First Name" required>
-                                </td>
-                            </form>
-                        </tr>
-                        <tr>
-                            <td class="pDetails">Second Name</td>
-                            <td><input id="last-name" class="inp" type="text" placeholder="Second Name" required></td>
-                        </tr>
-                        <tr>
-                            <td class="pDetails">Email</td>
-                            <td><input id="email" class="inp" type="email" placeholder="Email" required></td>
-                        </tr>
-                        <tr>
-                            <td class="pDetails">Address</td>
-                            <td><textarea id="address" class="inp" placeholder="Address" for="addrress"
-                                    required></textarea>
+
+                    <tr>
+                        <td class="pDetails"><b>First Name</b></td>
+                        <form id="first-name">
+                            <td><input id="first-name" class="inp" type="text" placeholder="First Name" required>
                             </td>
-                        </tr>
-                        <tr>
-                            <td class="pDetails">Pincode</td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <td class="pDetails"><b>Second Name</b></td>
+                        <td><input id="last-name" class="inp" type="text" placeholder="Second Name" required></td>
+                    </tr>
+                    <tr>
+                        <td class="pDetails"><b>Email</b></td>
+                        <td><input id="email" class="inp" type="email" placeholder="Email" required></td>
+                    </tr>
+                    <tr>
+                        <td class="pDetails"><b>Address</b></td>
+                        <td><textarea id="address" class="inp" placeholder="Address" for="addrress" required></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="pDetails"><b>Pincode</b></td>
+                        <td>
+                            <label> <input class="inp" type="text" id="pincode" placeholder="Pincode" required></label>
+                        </td>
+                    </tr>
+                    <tr>
+
+                        <div>
+                            <td class="pDetails"><b>Gender</b>:</td>
                             <td>
-                                <label> <input class="inp" type="text" id="pincode" placeholder="Pincode"
-                                        required></label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <div>
-                            <td class="pDetails">Gender</td>
-                            <td>
-                                <label><input class="radio" type="radio" name="gender" value="Female"
-                                        required>Female</label>
                                 <label><input class="radio" type="radio" name="gender" value="Male"
                                         required>Male</label>
+
+                                <label><input class="radio" type="radio" name="gender" value="Female"
+                                        required>Female</label>
                             </td>
                         </div>
-                        </tr>
-                        <tr>
-                            <td class="pDetails">Food (Select 3)</td>
-                            <td>
-                                <div class="Food">
-                                <select id="Food">required
-                                    <option value="Briyani">Briyani</option>
-                                    <option value="Pizza">Pizza</option>
-                                    <option value="Veg Meals">Veg Meals</option>
-                                    <option value="Burger">Burger</option>
-                                    <option value="Noodels">Noodels</option>
-                                </select>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <div>
-                            <td class="pDetails">State</td>
-                            <td><input id="state" class="inp" type="text" placeholder="State" required></td>
-                        </div>
-                        </tr>
-                        <tr>
-                            <td class="pDetails">Country</td>
-                            <td><input id="country" class="inp" type="text" placeholder="Country" required></td>
-                        </tr>
-                    </table>
-                    <button class="submit btn btn-primary" id="submit" type="submit">Submit</button>
-                    <button class="reset btn btn-secondary" type="reset">Reset</button>
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <div class="Food">
+                        <td class="pDetails"><b>Food:</b></td>
+
+                        <label><input class="check" type="checkbox" name="food" value="Pizza">Pizza</label>
+                        <label><input class="check" type="checkbox" name="food" value="Burger">Burger</label>
+                        <label><input class="check" type="checkbox" name="food" value="French Fries">French
+                            Fries</label>
+                        <label><input class="check" type="checkbox" name="food" value="Biriyani">Biriyani</label>
+                        <label><input class="check" type="checkbox" name="food" value="Fried Chicken">Fried
+                            Chicken</label>
+
                 </div>
-            </form>
+                </td>
+                </tr>
+                <tr>
+                    <div>
+                        <td class="pDetails"><b>State</b></td>
+                        <td><input id="state" class="inp" type="text" placeholder="State" required></td>
+                    </div>
+                </tr>
+                <tr>
+                    <td class="pDetails"><b>Country</b></td>
+                    <td><input id="country" class="inp" type="text" placeholder="Country" required></td>
+                </tr>
+
+                <button class="submit btn btn-primary" id="submit" type="submit">Submit</button>
+                <button class="reset btn btn-secondary" type="reset">Reset</button>
         </div>
+        </form>
+    </div>
     <div>
         <table class="table">
             <thead>
@@ -106,8 +112,7 @@
 
     </div>
     </div>
-    <script src="./script.js"></script>
-    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    
 </body>
 
 </html>
